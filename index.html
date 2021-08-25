@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to space!</title>
+
+    <link rel="icon" type="image/x-icon" href="./img/rocket.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="table-planets">
+                <h2>Planets</h2>
+                <div class="table">
+                    <table id="planetsTable">
+                      <thead>
+                        <tr>
+                          <th>English Name</th>
+                          <th>Name</th>
+                          <th>Sideral Orbit</th>
+                          <th>Sideral Rotation</th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                    </table>
+                  </div>
+            </div>
+            <div class="grafico-space">
+                <h2>What's in space?</h2>
+                <canvas id="myChart" style="margin: 0 auto; height: 170px;"></canvas>
+            </div>
+            <div class="content-planets">
+                <div class="terra-card">
+                    <div class="card-info">
+                        <div id="terra-en" class="card-title"></div>
+                        <div id="terra-name" class="card-subtitle"></div>
+                        <div class="card-infos-group">
+                            <div class="card-infos">
+                                <div class="card-subinfo">
+                                    <label>Moons</label>
+                                    <div id="terra-moons"></div>
+                                </div>
+                                <div class="card-subinfo">
+                                    <label>Density</label>
+                                    <div id="terra-density"></div>
+                                </div>
+                                <div class="card-subinfo">
+                                    <label>Gravity</label>
+                                    <div id="terra-gravity"></div>
+                                </div>
+                            </div>
+                            <div class="card-infos">
+                                <div class="card-subinfo">
+                                    <label>Eccentricity</label>
+                                    <div id="terra-eccentricity"></div>
+                                </div>
+                                <div class="card-subinfo">
+                                    <label>Inclination</label>
+                                    <div id="terra-inclination"></div>
+                                </div>
+                                <div class="card-subinfo">
+                                    <label>Flattening</label>
+                                    <div id="terra-flattening"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-img">
+                        <img src="./img/earth.png" alt="earth">
+                    </div>
+                </div>
+                <div class="lua-card">
+                    <div class="card-info">
+                        <div id="lua-en" class="card-title"></div>
+                        <div id="lua-name" class="card-subtitle"></div>
+                        <div class="card-subinfo">
+                            <label>Density</label>
+                            <div id="lua-density"></div>
+                        </div>
+                        <div class="card-subinfo">
+                            <label>Gravity</label>
+                            <div id="lua-gravity"></div>
+                        </div>
+                        <div class="card-subinfo">
+                            <label>Mean Radius</label>
+                            <div id="lua-mean"></div>
+                        </div>
+                    </div>
+                    <div class="card-img">
+                        <img src="./img/moon.png" alt="moon">
+                    </div>
+                </div>
+               <div class="sol-card">
+                   <div class="card-info">
+                        <div id="sol-en" class="card-title"></div>
+                        <div id="sol-name" class="card-subtitle"></div>
+                        <div class="card-subinfo">
+                            <label>Density</label>
+                            <div id="sol-density"></div>
+                        </div>
+                        <div class="card-subinfo">
+                            <label>Gravity</label>
+                            <div id="sol-gravity"></div>
+                        </div>
+                        <div class="card-subinfo">
+                            <label>Mean Radius</label>
+                            <div id="sol-mean"></div>
+                        </div>
+                    </div>
+                    <div class="card-img">
+                        <img src="./img/sun.png" alt="sun">
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
